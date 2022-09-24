@@ -9,3 +9,5 @@
 [![Read the Docs](https://readthedocs.org/projects/modern-python-template/badge/)](https://modern-python-template.readthedocs.io/)
 
 Modern Python Template
+
+[Documentation available here](https://modern-python-template.readthedocs.io/)
