@@ -42,7 +42,7 @@ def install_with_constraints(session: Session, *args: str, **kwargs: Any) -> Non
     os.remove(requirements.name)
 
 
-@nox.session(python=["3.8", "3.7"])
+@nox.session(python=["3.8"])
 def tests(session: Session) -> None:
     """Run the tests suite.
 
@@ -57,7 +57,7 @@ def tests(session: Session) -> None:
     session.run("pytest", *args)
 
 
-@nox.session(python=["3.8", "3.7"])
+@nox.session(python=["3.8"])
 def black(session: Session) -> None:
     """Run black code formatter.
 
@@ -69,7 +69,7 @@ def black(session: Session) -> None:
     session.run("black", *args)
 
 
-@nox.session(python=["3.8", "3.7"])
+@nox.session(python=["3.8"])
 def lint(session: Session) -> None:
     """Lint using Flake8. Configurations in .flake8.
 
@@ -113,7 +113,7 @@ def safety(session: Session) -> None:
         session.run("safety", "check", f"--file={requirements.name}", "--full-report")
 
 
-@nox.session(python=["3.8", "3.7"])
+@nox.session(python=["3.8"])
 def mypy(session: Session) -> None:
     """Static Type checking using mypy.
 
@@ -125,7 +125,7 @@ def mypy(session: Session) -> None:
     session.run("mypy", *args)
 
 
-@nox.session(python="3.7")
+@nox.session(python="3.8")
 def pytype(session: Session) -> None:
     """Run the static type checker using pytype.
 
@@ -137,7 +137,7 @@ def pytype(session: Session) -> None:
     session.run("pytype", *args)
 
 
-@nox.session(python=["3.8", "3.7"])
+@nox.session(python=["3.8"])
 def typeguard(session: Session) -> None:
     """Runtime type checking using typegaurd.
 
@@ -156,7 +156,7 @@ def typeguard(session: Session) -> None:
     session.run("pytest", f"--typeguard-packages={package}", *args)
 
 
-@nox.session(python=["3.8", "3.7"])
+@nox.session(python=["3.8"])
 def xdoctest(session: Session) -> None:
     """Run examples with xdoctest."""
     args = session.posargs or ["all"]
