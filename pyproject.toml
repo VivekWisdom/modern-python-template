@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "modern-python-template"
-version = "0.1.0"
+version = "1.0.0"
 description = "The Hypermordern Python Project"
 authors = ["Vivek Wisdom <ervivekwisdom@gmail.com>"]
 readme = "README.md"
