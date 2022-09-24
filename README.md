@@ -6,4 +6,6 @@
 
 [![PyPI](https://img.shields.io/pypi/v/modern-python-template.svg)](https://pypi.org/project/modern-python-template/)
 
-modern-python-template
+[![Read the Docs](https://readthedocs.org/projects/modern-python-template/badge/)](https://modern-python-template.readthedocs.io/)
+
+Modern Python Template
