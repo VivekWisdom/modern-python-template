@@ -38,19 +38,21 @@ coverage = {extras = ["toml"], version = "^6.4.4"}
 pytest-cov = "^3.0.0"
 pytest-mock = "^3.8.2"
 black = "^22.8.0"
-flake8 = "^5.0.4"
-flake8-bandit = "^4.1.1"
-flake8-black = "^0.3.3"
-flake8-bugbear = "^22.9.23"
-flake8-import-order = "^0.18.1"
+flake8 = "^3.7.9"
 safety = "^2.2.0"
 mypy = "^0.971"
 pytype = {version = "^2022.9.19", python = "3.7"}
 typeguard = "^2.13.3"
-flake8-annotations = "^2.9.1"
-flake8-docstrings = "^1.6.0"
 darglint = "^1.8.1"
 xdoctest = "^1.1.0"
+Sphinx = "^5.1.1"
+flake8-black = "^0.3.3"
+flake8-bugbear = "^22.9.23"
+flake8-import-order = "^0.18.1"
+flake8-annotations = "^2.9.1"
+flake8-docstrings = "^1.6.0"
+flake8-bandit = "^3.0.0"
+sphinx-autodoc-typehints = "^1.19.2"
 
 [build-system]
 requires = ["poetry-core"]
