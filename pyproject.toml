@@ -2,7 +2,7 @@
 name = "modern-python-template"
 version = "0.1.0"
 description = "The Hypermordern Python Project"
-authors = ["Vivek Tripathi <ervivekwisdom@gmail.com>"]
+authors = ["Vivek Wisdom <ervivekwisdom@gmail.com>"]
 readme = "README.md"
 homepage = "https://github.com/VivekWisdom/modern-python-template"
 repository = "https://github.com/VivekWisdom/modern-python-template"
