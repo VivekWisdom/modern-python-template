@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "modern-python-template"
-version = "1.0.0"
+version = "1.1.0"
 description = "The Hypermordern Python Project"
 authors = ["Vivek Wisdom <ervivekwisdom@gmail.com>"]
 readme = "README.md"
@@ -30,6 +30,7 @@ click = "^8.1.3"
 requests = "^2.28.1"
 desert = "^2022.9.22"
 marshmallow = "^3.18.0"
+importlib-metadata = {version = "^4.12.0", python = "<3.8"}
 
 
 [tool.poetry.group.dev.dependencies]
