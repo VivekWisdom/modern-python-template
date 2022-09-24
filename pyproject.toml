@@ -6,6 +6,7 @@ authors = ["Vivek Wisdom <ervivekwisdom@gmail.com>"]
 readme = "README.md"
 homepage = "https://github.com/VivekWisdom/modern-python-template"
 repository = "https://github.com/VivekWisdom/modern-python-template"
+documentation = "https://modern-python-template.readthedocs.io"
 
 [tool.poetry.scripts]
 modern-python-template = "modern_python_template.console:main"
