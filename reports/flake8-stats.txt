@@ -1,0 +1,4 @@
+src/modern_python_template/wikipedia.py:11:1: I202 Additional newline in a group of imports. 'import requests' is identified as Third Party and 'import marshmallow' is identified as Third Party.: https://www.flake8rules.com/rules/I202.html
+src/modern_python_template/wikipedia.py:34:1: DAR401 Missing exception(s) in Raises section: -r ClickException: https://www.flake8rules.com/rules/DAR401.html
+src/modern_python_template/wikipedia.py:39:1: DAR103 Parameter type mismatch:  ~language: expected str but was str, optional: https://www.flake8rules.com/rules/DAR103.html
+src/modern_python_template/wikipedia.py:42:1: DAR402 Excess exception(s) in Raises section: +r click.ClickException: https://www.flake8rules.com/rules/DAR402.html

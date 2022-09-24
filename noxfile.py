@@ -51,7 +51,9 @@ def tests(session: Session) -> None:
     """
     args = session.posargs or ["--cov", "-m", "not e2e"]
     session.run("poetry", "install", "--no-dev", external=True)
-    install_with_constraints(session, "coverage[toml]", "pytest", "pytest-cov", "pytest-mock")
+    install_with_constraints(
+        session, "coverage[toml]", "pytest", "pytest-cov", "pytest-mock", "--use-deprecated=legacy-resolver"
+    )
     session.run("pytest", *args)
 
 
@@ -63,7 +65,7 @@ def black(session: Session) -> None:
         session (Session): Nox Session
     """
     args = session.posargs or locations
-    install_with_constraints(session, "black")
+    install_with_constraints(session, "black", "--use-deprecated=legacy-resolver")
     session.run("black", *args)
 
 
@@ -84,6 +86,7 @@ def lint(session: Session) -> None:
         "flake8-bugbear",
         "flake8-docstrings",
         "flake8-import-order",
+        "darglint",
         "--use-deprecated=legacy-resolver",
     )
     session.run("flake8", *args)
@@ -151,3 +154,12 @@ def typeguard(session: Session) -> None:
         "--use-deprecated=legacy-resolver",
     )
     session.run("pytest", f"--typeguard-packages={package}", *args)
+
+
+@nox.session(python=["3.8", "3.7"])
+def xdoctest(session: Session) -> None:
+    """Run examples with xdoctest."""
+    args = session.posargs or ["all"]
+    session.run("poetry", "install", "--no-dev", external=True)
+    install_with_constraints(session, "xdoctest", "--use-deprecated=legacy-resolver")
+    session.run("python", "-m", "xdoctest", package, *args)
